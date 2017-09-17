@@ -43,4 +43,11 @@ const totalYears = inventors.reduce((total, inventor) => {
   return total + (inventor.year);
 }, 0)
 ```
-* array functions (filter, map, sort, reduce,)
+* Creating array from querySelectorAll
+```sh
+const links = Array.from(category.querySelectorAll('.mw-catogory a'))
+```
+or
+```sh
+const links = [...category.querySelectorAll('.mw-category a')]
+```
