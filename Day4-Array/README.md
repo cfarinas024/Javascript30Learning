@@ -30,4 +30,17 @@ const ordered = inventors.sort(function(a, b) {
 ```sh
 const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
 ```
+Reduce method
+```sh
+var totalYears = 0;
+
+for(var i = 0; i < inventors.length; i++) {
+  totalYears += inventors[i].year
+}
+```
+```sh
+const totalYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.year);
+}, 0)
+```
 * array functions (filter, map, sort, reduce,)
